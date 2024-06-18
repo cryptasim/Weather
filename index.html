@@ -88,7 +88,7 @@
             case "Rain":
               weatherIcon.src = "rain.png";
               body.style.backgroundImage =
-                "url('https://img.freepik.com/free-photo/weather-effects-composition_23-2149853295.jpg?t=st=1718715868~exp=1718719468~hmac=b2d3ee9d635f6400e126e8fe036db7f3fd59560ff7a761e9af2526a454421818&w=2000')";
+                "url('https://cdn.pixabay.com/photo/2024/04/15/07/51/raining-8697220_1280.jpg')";
               break;
             case "Drizzle":
               weatherIcon.src = "drizzle.png";
@@ -112,6 +112,11 @@
       }
       searchBtn.addEventListener("click", () => {
         checkWeather(searchBox.value);
+      });
+      searchBox.addEventListener("keypress", (event) => {
+        if (event.key === "Enter") {
+          checkWeather(searchBox.value);
+        }
       });
     </script>
   </body>
