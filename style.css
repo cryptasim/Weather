@@ -124,6 +124,7 @@ body {
   display: none;
 }
 
+/* Responsive Styles */
 @media (max-width: 768px) {
   .weather h1 {
     font-size: 60px;
@@ -183,10 +184,6 @@ body {
   .weather h2 {
     font-size: 30px;
   }
-  .weather h3 {
-    font-size: 20px;
-  }
-  
 
   .details {
     flex-direction: row;
